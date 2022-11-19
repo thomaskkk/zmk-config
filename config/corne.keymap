@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -31,7 +43,7 @@
 
             bindings = <
    &kp ESC           &kp Q           &kp W               &kp F         &kp P    &kp G              &kp J         &kp L                &kp U            &kp Y        &kp SEMI         &kp BSPC
- &kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T    &kp D              &kp H  &mt RSHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt LEFT_GUI O         &kp LGUI
+ &kp LCTRL  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHIFT T    &kp D              &kp H  &hm RSHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm LEFT_GUI O         &kp LGUI
  &kp LSHFT           &kp Z           &kp X               &kp C         &kp V    &kp B              &kp K         &kp M            &kp COMMA          &kp DOT        &kp FSLH  &kp RIGHT_SHIFT
                                                        &kp TAB         &mo 1  &kp RET          &kp SPACE         &mo 2        &kp BACKSPACE
             >;
