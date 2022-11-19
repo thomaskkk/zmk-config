@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        new_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <36 41>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,9 +31,9 @@
 
             bindings = <
    &kp ESC           &kp Q           &kp W               &kp F         &kp P    &kp G              &kp J         &kp L                &kp U            &kp Y        &kp SEMI         &kp BSPC
-   &kp TAB  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T    &kp D              &kp H  &mt RSHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt LEFT_GUI O         &kp LGUI
+ &kp LCTRL  &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LSHIFT T    &kp D              &kp H  &mt RSHIFT N  &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt LEFT_GUI O         &kp LGUI
  &kp LSHFT           &kp Z           &kp X               &kp C         &kp V    &kp B              &kp K         &kp M            &kp COMMA          &kp DOT        &kp FSLH  &kp RIGHT_SHIFT
-                                                     &kp LCTRL         &mo 1  &kp RET          &kp SPACE         &mo 2             &kp RALT
+                                                       &kp TAB         &mo 1  &kp RET          &kp SPACE         &mo 2        &kp BACKSPACE
             >;
         };
 
