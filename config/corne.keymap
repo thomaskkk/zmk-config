@@ -25,6 +25,18 @@
 
     combos {
         compatible = "zmk,combos";
+
+        game1_layer {
+            bindings = <&tog 4>;
+            key-positions = <10 34>;
+            layers = <0 1 2 3>;
+        };
+
+        default_layer {
+            bindings = <&to 0>;
+            key-positions = <10 34>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -81,6 +93,15 @@
  &trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans          &kp C_VOL_UP      &trans      &trans     &kp F11   &kp F12  &trans
  &trans       &kp INS  &kp PAUSE_BREAK  &kp SCROLLLOCK  &trans  &trans          &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
                                                 &trans  &trans  &trans                &trans      &trans      &trans
+            >;
+        };
+
+        Game_1 {
+            bindings = <
+ &kp ESC    &kp TAB   &kp Q   &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
+  &trans  &kp LSHFT   &kp A   &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LCTRL   &kp Z   &kp X   &kp C     &trans                &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &kp SPACE                &trans  &trans  &trans
             >;
         };
     };
