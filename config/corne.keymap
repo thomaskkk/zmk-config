@@ -101,16 +101,7 @@
  &kp ESC    &kp TAB   &kp Q     &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
   &trans  &kp LSHFT   &kp A     &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
   &trans  &kp LCTRL   &kp Z     &kp X   &kp C      &kp V                &trans  &trans  &trans  &trans  &trans  &trans
-                             &kp LALT   &mo 4  &kp SPACE                &trans  &trans  &trans
-            >;
-        };
-
-        Game_2 {
-            bindings = <
- &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans          &trans  &trans  &trans
+                             &kp LALT  &trans  &kp SPACE                &trans  &trans  &trans
             >;
         };
     };
