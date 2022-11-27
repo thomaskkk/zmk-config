@@ -38,10 +38,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-                &kp ESC           &kp Q           &kp W               &kp F         &kp P          &kp G              &kp J         &kp L                &kp U            &kp Y        &kp SEMI             &kp BSPC
-          &hm LCTRL TAB  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHIFT T          &kp D              &kp H  &hm RSHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm LEFT_GUI O        &hm RCTRL DEL
- &hm LSHIFT PRINTSCREEN           &kp Z           &kp X               &kp C         &kp V          &kp B              &kp K         &kp M            &kp COMMA          &kp DOT        &kp FSLH  &hm RSHIFT CAPSLOCK
-                                                              &hm LCTRL TAB   &lt 1 ENTER      &kp SPACE      &kp BACKSPACE     &lt 2 DEL     &hm LEFT_ALT ESC
+                &kp ESC           &kp Q           &kp W               &kp F         &kp P     &kp G              &kp J         &kp L                &kp U            &kp Y        &kp SEMI             &kp BSPC
+          &hm LCTRL TAB  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHIFT T     &kp D              &kp H  &hm RSHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm LEFT_GUI O        &hm RCTRL DEL
+ &hm LSHIFT PRINTSCREEN           &kp Z           &kp X               &kp C         &kp V     &kp B              &kp K         &kp M            &kp COMMA          &kp DOT        &kp FSLH  &hm RSHIFT CAPSLOCK
+                                                              &hm LCTRL TAB   &lt 1 ENTER  &kp BSPC          &kp SPACE     &lt 2 DEL     &hm LEFT_ALT ESC
             >;
         };
 
