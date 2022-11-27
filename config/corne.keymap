@@ -50,10 +50,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-                &kp ESC           &kp Q           &kp W               &kp F         &kp P     &kp G              &kp J         &kp L                &kp U            &kp Y        &kp SEMI             &kp BSPC
-          &hm LCTRL TAB  &hm LEFT_GUI A  &hm LEFT_ALT R  &hm LEFT_CONTROL S  &hm LSHIFT T     &kp D              &kp H  &hm RSHIFT N  &hm RIGHT_CONTROL E  &hm RIGHT_ALT I  &hm LEFT_GUI O        &hm RCTRL DEL
- &hm LSHIFT PRINTSCREEN           &kp Z           &kp X               &kp C         &kp V     &kp B              &kp K         &kp M            &kp COMMA          &kp DOT        &kp FSLH  &hm RSHIFT CAPSLOCK
-                                                              &hm LCTRL TAB   &lt 1 ENTER  &kp BSPC          &kp SPACE     &lt 2 DEL     &hm LEFT_ALT ESC
+          &kp ESC       &kp Q       &kp W          &kp F         &kp P     &kp G              &kp J         &kp L         &kp U       &kp Y        &kp SEMI             &kp BSPC
+    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHIFT T     &kp D              &kp H  &hm RSHIFT N   &hm RCTRL E  &hm RALT I  &hm LEFT_GUI O        &hm RCTRL DEL
+ &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C         &kp V     &kp B              &kp K         &kp M     &kp COMMA     &kp DOT        &kp FSLH  &hm RSHIFT CAPSLOCK
+                                           &hm LCTRL TAB   &lt 1 ENTER  &kp BSPC          &kp SPACE     &lt 2 DEL  &hm LALT ESC
             >;
         };
 
@@ -65,10 +65,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans       &kp ESC         &kp HOME    &kp UP           &kp END          &kp PG_UP          &kp N7  &kp N8  &kp N9  &kp MINUS      &kp PLUS  &trans
- &trans       &kp TAB         &kp LEFT  &kp DOWN         &kp RIGHT          &kp PG_DN          &kp N4  &kp N5  &kp N6     &kp N0  &kp ASTERISK  &trans
- &trans  &kp CAPSLOCK  &kp PRINTSCREEN    &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))          &kp N1  &kp N2  &kp N3    &kp DOT     &kp SLASH  &trans
-                                          &trans            &trans             &trans          &trans  &trans  &trans
+ &trans   &kp ESC   &kp HOME    &kp UP           &kp END          &kp PG_UP          &kp N7  &kp N8  &kp N9  &kp MINUS   &kp PLUS  &trans
+ &trans   &kp TAB   &kp LEFT  &kp DOWN         &kp RIGHT          &kp PG_DN          &kp N4  &kp N5  &kp N6     &kp N0   &kp STAR  &trans
+ &trans  &kp CAPS  &kp PSCRN    &trans  &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))          &kp N1  &kp N2  &kp N3    &kp DOT  &kp SLASH  &trans
+                                &trans            &trans             &trans          &trans  &trans  &trans
             >;
         };
 
@@ -89,19 +89,28 @@
 
         Function {
             bindings = <
- &trans        &kp F1           &kp F2          &kp F3  &kp F4  &kp F5                &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
- &trans  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans          &kp C_VOL_UP      &trans      &trans     &kp F11   &kp F12  &trans
- &trans       &kp INS  &kp PAUSE_BREAK  &kp SCROLLLOCK  &trans  &trans          &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
-                                                &trans  &trans  &trans                &trans      &trans      &trans
+ &trans        &kp F1           &kp F2        &kp F3  &kp F4  &kp F5                &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
+ &trans  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans          &kp C_VOL_UP      &trans      &trans     &kp F11   &kp F12  &trans
+ &trans       &kp INS  &kp PAUSE_BREAK      &kp SLCK  &trans  &trans          &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
+                                              &trans  &trans  &trans                &trans      &trans      &trans
             >;
         };
 
         Game_1 {
             bindings = <
- &kp ESC    &kp TAB   &kp Q   &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
-  &trans  &kp LSHFT   &kp A   &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LCTRL   &kp Z   &kp X   &kp C     &trans                &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &trans  &kp SPACE                &trans  &trans  &trans
+ &kp ESC    &kp TAB   &kp Q     &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
+  &trans  &kp LSHFT   &kp A     &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LCTRL   &kp Z     &kp X   &kp C      &kp V                &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp LALT   &mo 4  &kp SPACE                &trans  &trans  &trans
+            >;
+        };
+
+        Game_2 {
+            bindings = <
+ &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
