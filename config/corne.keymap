@@ -50,9 +50,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp ESC       &kp Q       &kp W          &kp F         &kp P     &kp G              &kp J         &kp L         &kp U       &kp Y        &kp SEMI             &kp BSPC
-    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHIFT T     &kp D              &kp H  &hm RSHIFT N   &hm RCTRL E  &hm RALT I  &hm LEFT_GUI O        &hm RCTRL DEL
- &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C         &kp V     &kp B              &kp K         &kp M     &kp COMMA     &kp DOT        &kp FSLH  &hm RSHIFT CAPSLOCK
+          &kp ESC       &kp Q       &kp W          &kp F         &kp P     &kp G              &kp J         &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
+    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHIFT T     &kp D              &kp H  &hm RSHIFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
+ &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C         &kp V     &kp B              &kp K         &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
                                            &hm LCTRL TAB   &lt 1 ENTER  &kp BSPC          &kp SPACE     &lt 2 DEL  &hm LALT ESC
             >;
         };
@@ -80,10 +80,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans   &kp EXCL     &kp AT   &kp HASH          &kp DLLR          &kp PRCNT                  &kp CARET          &kp AMPS  &kp ASTERISK   &kp LPAR   &kp RPAR  &trans
- &trans  &kp GRAVE  &kp CARET  &kp TILDE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES          &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE     &kp TILDE  &kp CARET  &kp GRAVE  &trans
- &trans   &kp PIPE  &kp EQUAL   &kp PLUS         &kp MINUS          &kp UNDER                   &kp LBRC          &kp RBRC      &kp LBKT   &kp RBKT   &kp BSLH  &trans
-                                  &trans            &trans             &trans                     &trans            &trans        &trans
+ &trans   &kp EXCL     &kp AT   &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
+ &trans  &kp GRAVE  &kp CARET  &kp TILDE    &kp SQT    &kp DQT            &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
+ &trans   &kp PIPE  &kp EQUAL   &kp PLUS  &kp MINUS  &kp UNDER           &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &trans
+                                  &trans     &trans     &trans             &trans    &trans     &trans
             >;
         };
 
