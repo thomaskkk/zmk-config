@@ -46,33 +46,33 @@
     };
 
     macros {
-        dqt: dqt {
+        spacedqt: spacedqt {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "spacedqt";
             #binding-cells = <0>;
             bindings = <&kp DQT &kp SPACE>;
         };
-        sqt: sqt {
+        spacesqt: spacesqt {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "spacesqt";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SPACE>;
         };
-        tilde: tilde {
+        spacetilde: spacetilde {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "spacetilde";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp SPACE>;
         };
-        caret: caret {
+        spacecaret: spacecaret {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "spacecaret";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp SPACE>;
         };
-        grave: grave {
+        spacegrave: spacegrave {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+                label = "spacegrave";
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp SPACE>;
         };
