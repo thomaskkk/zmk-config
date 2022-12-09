@@ -89,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G                    &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
-    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D                    &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
- &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B                    &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
-                                           &hm LCTRL TAB    &lt 1 RET  &hm LSHFT BSPC          &hm RSHFT SPACE    &lt 2 DEL  &hm LALT ESC
+          &kp ESC       &kp Q       &kp W          &kp F        &kp P            &kp G                  &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
+    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T            &kp D                  &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
+ &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V            &kp B                  &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
+                                           &hm LCTRL TAB   &lt 1 BSPC  &hm LSHFT SPACE          &hm RSHFT RET    &lt 2 DEL  &hm LALT ESC
             >;
         };
 
@@ -104,9 +104,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))      &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9   &kp STAR  &trans
- &trans      &kp LGUI          &kp LEFT    &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6  &kp SLASH  &trans
- &trans  &kp LS(LGUI)         &kp PSCRN  &caps_word           &kp HOME    &kp END             &kp N0    &kp N1        &kp N2  &kp N3    &kp DOT  &trans
+ &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))      &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
+ &trans      &kp LGUI          &kp LEFT    &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
+ &trans  &kp LS(LGUI)         &kp PSCRN  &caps_word           &kp HOME    &kp END             &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
                                              &trans             &trans     &trans             &trans  &lt 2 N0  &hm LALT DOT
             >;
         };
