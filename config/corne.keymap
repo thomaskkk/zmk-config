@@ -89,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-          &kp ESC       &kp Q       &kp W          &kp F        &kp P            &kp G                  &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
-    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T            &kp D                  &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
- &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V            &kp B                  &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
-                                           &hm LCTRL TAB   &lt 1 BSPC  &hm LSHFT SPACE          &hm RSHFT RET    &lt 2 DEL  &hm LALT ESC
+          &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G                    &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
+    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D                    &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
+ &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B                    &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
+                                           &hm LCTRL TAB    &lt 1 RET  &hm LSHFT BSPC          &hm RSHFT SPACE    &lt 2 DEL  &hm LALT ESC
             >;
         };
 
