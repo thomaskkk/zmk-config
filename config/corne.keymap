@@ -33,21 +33,21 @@
         compatible = "zmk,combos";
 
         game1_layer {
-            bindings = <&tog 4>;
+            bindings = <&tog GAME>;
             key-positions = <10 34>;
-            layers = <0 1 2 3>;
+            layers = <COLEMAK NUMPAD SYMBOLS FUNC>;
         };
 
         default_layer {
-            bindings = <&to 0>;
+            bindings = <&to COLEMAK>;
             key-positions = <10 34>;
-            layers = <4>;
+            layers = <GAME>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <0>;
+            layers = <COLEMAK>;
         };
     };
 
@@ -155,8 +155,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <NUMPAD SYMBOLS>;
+            then-layer = <FUNC>;
         };
     };
 };
