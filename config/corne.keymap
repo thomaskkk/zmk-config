@@ -8,12 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define COLEMAK 0
-#define NUMPAD  1
-#define SYMBOLS 2
-#define FUNC    3
-#define GAME    4
-
 / {
     behaviors {
         hm: homerow_mods {
@@ -35,19 +29,19 @@
         game1_layer {
             bindings = <&tog 4>;
             key-positions = <10 34>;
-            layers = <   >;
+            layers = <0 1 2 3>;
         };
 
         default_layer {
             bindings = <&to 0>;
             key-positions = <10 34>;
-            layers = <>;
+            layers = <4>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <>;
+            layers = <0>;
         };
     };
 
@@ -160,8 +154,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <NUMPAD SYMBOLS>;
-            then-layer = <FUNC>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
