@@ -33,21 +33,21 @@
         compatible = "zmk,combos";
 
         game1_layer {
-            bindings = <&tog GAME>;
+            bindings = <&tog 4>;
             key-positions = <10 34>;
-            layers = <COLEMAK NUMPAD SYMBOLS FUNC>;
+            layers = <   >;
         };
 
         default_layer {
-            bindings = <&to COLEMAK>;
+            bindings = <&to 0>;
             key-positions = <10 34>;
-            layers = <GAME>;
+            layers = <>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <COLEMAK>;
+            layers = <>;
         };
     };
 
@@ -93,12 +93,13 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+
             label = "Colemak";
             bindings = <
-          &kp ESC       &kp Q       &kp W          &kp F             &kp P            &kp G                  &kp J              &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
-    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S       &hm LSHFT T            &kp D                  &kp H        &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
- &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C             &kp V            &kp B                  &kp K              &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
-                                           &hm LCTRL TAB   &lt NUMPAD BSPC  &hm LSHFT SPACE          &hm RSHFT RET    &lt SYMBOLS DEL  &hm LALT ESC
+          &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G                    &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
+    &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D                    &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
+ &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B                    &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
+                                           &hm LCTRL TAB    &lt 1 RET  &hm LSHFT BSPC          &hm RSHFT SPACE    &lt 2 DEL  &hm LALT ESC
             >;
         };
 
@@ -108,12 +109,13 @@
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+
             label = "Numpad";
             bindings = <
  &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))      &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
  &trans      &kp LGUI          &kp LEFT    &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
  &trans  &kp LS(LGUI)         &kp PSCRN  &caps_word           &kp HOME    &kp END             &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
-                                             &trans             &trans     &trans             &trans  &lt SYMBOLS N0  &hm LALT DOT
+                                             &trans             &trans     &trans             &trans  &lt 2 N0  &hm LALT DOT
             >;
         };
 
@@ -123,6 +125,7 @@
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+
             label = "Symbols";
             bindings = <
  &trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
@@ -143,7 +146,7 @@
         };
 
         Game {
-            label = "Game";            
+            label = "Game";
             bindings = <
  &kp ESC    &kp TAB   &kp Q     &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
   &trans  &kp LSHFT   &kp A     &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
