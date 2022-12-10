@@ -93,7 +93,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            label = "Colemak";
             bindings = <
           &kp ESC       &kp Q       &kp W          &kp F             &kp P            &kp G                  &kp J              &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
     &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S       &hm LSHFT T            &kp D                  &kp H        &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
@@ -108,7 +108,7 @@
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "Numpad";
             bindings = <
  &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))      &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
  &trans      &kp LGUI          &kp LEFT    &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
@@ -123,7 +123,7 @@
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "Symbols";
             bindings = <
  &trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR  &kp PRCNT          &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
  &trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt  &spacedqt            &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
@@ -133,6 +133,7 @@
         };
 
         Function {
+            label = "Function";
             bindings = <
  &trans        &kp F1           &kp F2        &kp F3  &kp F4      &kp F5                &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
  &trans  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2   &none  &bt BT_CLR          &kp C_VOL_UP       &none       &none     &kp F11   &kp F12  &trans
@@ -142,6 +143,7 @@
         };
 
         Game {
+            label = "Game";            
             bindings = <
  &kp ESC    &kp TAB   &kp Q     &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
   &trans  &kp LSHFT   &kp A     &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
