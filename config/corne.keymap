@@ -43,6 +43,12 @@
             key-positions = <1 2>;
             layers = <0>;
         };
+
+        caps_word {
+            bindings = <&caps_word>;
+            key-positions = <17 18>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -106,10 +112,10 @@
 
             label = "Numpad";
             bindings = <
- &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))      &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
- &trans      &kp LGUI          &kp LEFT    &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
- &trans  &kp LS(LGUI)         &kp PSCRN  &caps_word           &kp HOME    &kp END             &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
-                                             &trans             &trans     &trans             &trans  &lt 2 N0  &hm LALT DOT
+ &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))         &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP           &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
+ &trans      &kp LGUI          &kp LEFT       &kp DOWN          &kp RIGHT  &kp PG_DN          &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
+ &trans  &kp LS(LGUI)         &kp PSCRN  &kp C_AL_CALC           &kp HOME    &kp END             &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
+                                                &trans             &trans     &trans             &trans  &lt 2 N0  &hm LALT DOT
             >;
         };
 
@@ -139,13 +145,22 @@
             >;
         };
 
-        Game {
+        Game_1 {
             label = "Game";
             bindings = <
- &kp ESC    &kp TAB   &kp Q     &kp W   &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
-  &trans  &kp LSHFT   &kp A     &kp S   &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LCTRL   &kp Z     &kp X   &kp C      &kp V                &trans  &trans  &trans  &trans  &trans  &trans
-                             &kp LALT  &trans  &kp SPACE                &trans  &trans  &trans
+ &kp ESC    &kp TAB   &kp Q   &kp W      &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
+  &trans  &kp LSHFT   &kp A   &kp S      &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LCTRL   &kp Z   &kp X      &kp C      &kp V                &trans  &trans  &trans  &trans  &trans  &trans
+                              &sl 5  &kp LCTRL  &kp SPACE                &trans  &trans  &trans
+            >;
+        };
+
+        Game_2 {
+            bindings = <
+ &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans          &trans  &trans  &trans
             >;
         };
     };
