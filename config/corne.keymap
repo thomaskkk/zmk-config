@@ -21,6 +21,28 @@
                 <&kp>,
                 <&kp>;
         };
+        tm: thumb_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "THUMB_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings =
+                <&kp>,
+                <&kp>;
+        };
+        lt: behavior_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings =
+                <&mo>,
+                <&kp>;
+        };
     };
 
     combos {
@@ -105,7 +127,7 @@
           &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G                    &kp J        &kp L         &kp U       &kp Y    &kp SEMI         &kp BSPC
     &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D                    &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O    &hm RCTRL DEL
  &hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B                    &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &hm RSHIFT CAPS
-                                           &hm LCTRL TAB    &lt 1 RET  &hm LSHFT BSPC          &hm RSHFT SPACE    &lt 2 DEL  &hm LALT ESC
+                                           &tm LCTRL TAB    &lt 1 RET  &tm LSHFT BSPC          &tm RSHFT SPACE    &lt 2 DEL  &tm LALT ESC
             >;
         };
 
