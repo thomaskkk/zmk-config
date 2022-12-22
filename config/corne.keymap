@@ -62,7 +62,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <4 5>;
             layers = <0>;
         };
 
@@ -74,7 +74,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <25 24>;
+            key-positions = <29 28>;
             layers = <0>;
         };
     };
