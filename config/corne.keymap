@@ -57,13 +57,13 @@
         default_layer {
             bindings = <&to 0>;
             key-positions = <10 34>;
-            layers = <4>;
+            layers = <4 5>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <17 18>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         esc {
@@ -87,7 +87,7 @@
         backspace {
             bindings = <&kp BSPC>;
             key-positions = <6 7>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         del {
@@ -99,13 +99,13 @@
         enter {
             bindings = <&kp RET>;
             key-positions = <30 31>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         del2 {
             bindings = <&kp DEL>;
             key-positions = <18 19>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         caps_lock {
@@ -218,10 +218,10 @@
         Game_1 {
             label = "Game 1";
             bindings = <
- &kp ESC    &kp TAB   &kp Q   &kp W      &kp E      &kp R          &kp NUMBER_1  &kp N2  &kp N3  &kp N4  &kp N5  &trans
-  &trans  &kp LSHFT   &kp A   &kp S      &kp D      &kp F                &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LCTRL   &kp Z   &kp X      &kp C      &kp V                &trans  &trans  &trans  &trans  &trans  &trans
-                              &sl 5  &kp LCTRL  &kp SPACE                &trans  &trans  &trans
+ &kp ESC    &kp TAB   &kp Q   &kp W      &kp E      &kp R           &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
+  &trans  &kp LSHFT   &kp A   &kp S      &kp D      &kp F          &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
+  &trans  &kp LCTRL   &kp Z   &kp X      &kp C      &kp V               &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
+                              &sl 5  &kp LCTRL  &kp SPACE               &kp RET  &kp KP_N0  &kp KP_DOT
             >;
         };
 
