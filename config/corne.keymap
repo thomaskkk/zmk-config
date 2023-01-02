@@ -63,25 +63,25 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <17 18>;
-            layers = <>;
+            layers = <0>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <4 5>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         space {
             bindings = <&kp SPACE>;
             key-positions = <28 29>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         backspace {
@@ -93,7 +93,7 @@
         del {
             bindings = <&kp DEL>;
             key-positions = <16 17>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         enter {
@@ -111,13 +111,13 @@
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <5 6>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
 
         alt_f4 {
             bindings = <&kp LA(F4)>;
             key-positions = <9 10>;
-            layers = <0 1 2 3>;
+            layers = <>;
         };
     };
 
