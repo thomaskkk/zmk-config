@@ -165,10 +165,10 @@
         Colemak {
             label = "Colemak";
             bindings = <
-         &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G              &kp J        &kp L         &kp U       &kp Y    &kp SEMI                &kp BSPC
-   &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D              &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O  &hm RCTRL SINGLE_QUOTE
-&hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B              &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH         &hm RSHIFT CAPS
-                                          &tm LCTRL TAB    &lt 1 RET  &tm LSHFT BSPC    &tm RSHFT SPACE    &lt 2 DEL  &tm LALT ESC
+         &kp ESC  &kp Q  &kp W          &kp F      &kp P           &kp G              &kp J        &kp L         &kp U       &kp Y    &kp SEMI                &kp BSPC
+   &hm LCTRL TAB  &kp A  &kp R          &kp S      &kp T           &kp D              &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O  &hm RCTRL SINGLE_QUOTE
+&hm LSHIFT PSCRN  &kp Z  &kp X          &kp C      &kp V           &kp B              &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH         &hm RSHIFT CAPS
+                                &tm LCTRL TAB  &lt 1 RET  &tm LSHFT BSPC    &tm RSHFT SPACE    &lt 2 DEL  &tm LALT ESC
             >;
         };
 
