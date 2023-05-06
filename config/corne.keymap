@@ -216,7 +216,7 @@
         };
 
         Game_num {
-            label = "Game num"
+            label = "Game num";
             bindings = <
 &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))  &kp UP_ARROW  &kp LC(LG(RIGHT))  &kp PG_UP     &kp PLUS    &kp N7      &kp N8  &kp N9   &kp STAR  &trans
 &trans      &kp LGUI          &kp LEFT      &kp DOWN          &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4      &kp N5  &kp N6   &kp FSLH  &trans
@@ -226,7 +226,7 @@
         };
 
         Game_sym {
-            label = "Game sym"
+            label = "Game sym";
             bindings = <
 &trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
 &trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt       &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
@@ -236,12 +236,12 @@
         };
 
         Game_fct {
-            label = "Game fct"
+            label = "Game fct";
             bindings = <
-&trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
-&trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt       &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
-&trans     &kp PIPE    &kp EQUAL     &kp PLUS  &kp MINUS  &kp UNDERSCORE     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &trans
-                                        &to 4     &trans        &kp BSPC    &kp SPACE    &trans     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4    &kp F5          &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &kp C_VOL_UP      &trans      &trans     &kp F11   &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
+                         &to 4  &trans  &kp BSPC       &kp SPACE      &trans      &trans
             >;
         };
     };
