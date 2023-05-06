@@ -57,25 +57,25 @@
         default_layer {
             bindings = <&to 0>;
             key-positions = <10 34>;
-            layers = <4 5>;
+            layers = <4 5 6 7>;
         };
 
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19>;
-            layers = <0>;
+            layers = <0 5>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <4 5>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         space {
@@ -87,37 +87,37 @@
         backspace {
             bindings = <&kp BSPC>;
             key-positions = <6 7>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <16 17>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         enter {
             bindings = <&kp RET>;
             key-positions = <30 31>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         del2 {
             bindings = <&kp DEL>;
             key-positions = <18 19>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <5 6>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3 4 5 6 7>;
         };
 
         alt_f4 {
             bindings = <&kp LA(F4)>;
             key-positions = <9 10>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3>;
         };
 
         caps_word2 {
@@ -178,7 +178,7 @@
 &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))         &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP     &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
 &trans      &kp LGUI          &kp LEFT       &kp DOWN          &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
 &trans  &kp LS(LGUI)         &kp PSCRN  &kp C_AL_CALC           &kp HOME    &kp END       &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
-                                               &trans             &trans   &kp BSPC    &kp SPACE  &lt 2 N0  &hm LALT DOT
+                                               &trans             &trans   &kp BSPC    &kp SPACE  &lt 2 N0  &tm LALT DOT
             >;
         };
 
