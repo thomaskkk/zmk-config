@@ -69,13 +69,11 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <4 5>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         space {
@@ -87,31 +85,26 @@
         backspace {
             bindings = <&kp BSPC>;
             key-positions = <6 7>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <16 17>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         enter {
             bindings = <&kp RET>;
             key-positions = <30 31>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         del2 {
             bindings = <&kp DEL>;
             key-positions = <18 19>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <5 6>;
-            layers = <0 1 2 3 4 5 6 7>;
         };
 
         alt_f4 {
@@ -202,8 +195,8 @@
             >;
         };
 
-        Game_1 {
-            label = "Game 1";
+        Game_def {
+            label = "Game";
             bindings = <
 &kp ESC    &kp TAB  &kp Q  &kp W      &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
  &trans  &kp LSHFT  &kp A  &kp S      &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
@@ -212,8 +205,8 @@
             >;
         };
 
-        Game_2 {
-            label = "Game 2";
+        Game_typ {
+            label = "Game typ";
             bindings = <
 &none  &kp Q  &kp W  &kp F      &kp P           &kp G              &kp J      &kp L      &kp U       &kp Y  &kp SEMI  &none
 &none  &kp A  &kp R  &kp S      &kp T           &kp D              &kp H      &kp N      &kp E       &kp I     &kp O  &none
@@ -222,7 +215,8 @@
             >;
         };
 
-        layer_6 {
+        Game_num {
+            label = "Game num"
             bindings = <
 &trans  &kp LC(LGUI)  &kp LC(LG(LEFT))  &kp UP_ARROW  &kp LC(LG(RIGHT))  &kp PG_UP     &kp PLUS    &kp N7      &kp N8  &kp N9   &kp STAR  &trans
 &trans      &kp LGUI          &kp LEFT      &kp DOWN          &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4      &kp N5  &kp N6   &kp FSLH  &trans
@@ -231,7 +225,18 @@
             >;
         };
 
-        layer_7 {
+        Game_sym {
+            label = "Game sym"
+            bindings = <
+&trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
+&trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt       &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
+&trans     &kp PIPE    &kp EQUAL     &kp PLUS  &kp MINUS  &kp UNDERSCORE     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &trans
+                                        &to 4     &trans        &kp BSPC    &kp SPACE    &trans     &trans
+            >;
+        };
+
+        Game_fct {
+            label = "Game fct"
             bindings = <
 &trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
 &trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt       &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
@@ -244,9 +249,14 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        tri_layer {
+        function_layer {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        game_fct_layer {
+            if-layers = <6 7>;
+            then-layer = <8>;
         };
     };
 };
