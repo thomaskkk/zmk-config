@@ -165,10 +165,10 @@
         Colemak {
             label = "Colemak";
             bindings = <
-         &kp ESC  &kp Q  &kp W          &kp F      &kp P           &kp G              &kp J        &kp L         &kp U       &kp Y    &kp SEMI                &kp BSPC
-   &hm LCTRL TAB  &kp A  &kp R          &kp S      &kp T           &kp D              &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O  &hm RCTRL SINGLE_QUOTE
-&hm LSHIFT PSCRN  &kp Z  &kp X          &kp C      &kp V           &kp B              &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH         &hm RSHIFT CAPS
-                                &tm LCTRL TAB  &lt 1 RET  &tm LSHFT BSPC    &tm RSHFT SPACE    &lt 2 DEL  &tm LALT ESC
+         &kp ESC       &kp Q       &kp W          &kp F        &kp P           &kp G              &kp J        &kp L         &kp U       &kp Y    &kp SEMI                &kp BSPC
+   &hm LCTRL TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T           &kp D              &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O  &hm RCTRL SINGLE_QUOTE
+&hm LSHIFT PSCRN       &kp Z       &kp X          &kp C        &kp V           &kp B              &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH         &hm RSHIFT CAPS
+                                          &tm LCTRL TAB    &lt 1 RET  &tm LSHFT BSPC    &tm RSHFT SPACE    &lt 2 DEL  &tm LALT ESC
             >;
         };
 
@@ -208,17 +208,35 @@
 &kp ESC    &kp TAB  &kp Q  &kp W      &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
  &trans  &kp LSHFT  &kp A  &kp S      &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
  &trans   &kp LALT  &kp Z  &kp X      &kp C      &kp V         &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
-                           &sl 5  &kp LCTRL  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
+                           &to 5  &kp LCTRL  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
             >;
         };
 
         Game_2 {
             label = "Game 2";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&none  &kp Q  &kp W  &kp F      &kp P           &kp G              &kp J      &kp L      &kp U       &kp Y  &kp SEMI  &none
+&none  &kp A  &kp R  &kp S      &kp T           &kp D              &kp H      &kp N      &kp E       &kp I     &kp O  &none
+&none  &kp Z  &kp X  &kp C      &kp V           &kp B              &kp K      &kp M  &kp COMMA  &kp PERIOD  &kp FSLH  &none
+                     &to 4  &lt 6 RET  &tm LSHFT BSPC    &tm RSHFT SPACE  &lt 7 DEL    &kp ESC
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &kp LC(LGUI)  &kp LC(LG(LEFT))  &kp UP_ARROW  &kp LC(LG(RIGHT))  &kp PG_UP     &kp PLUS    &kp N7      &kp N8  &kp N9   &kp STAR  &trans
+&trans      &kp LGUI          &kp LEFT      &kp DOWN          &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4      &kp N5  &kp N6   &kp FSLH  &trans
+&trans  &kp LS(LGUI)            &trans        &trans           &kp HOME    &kp END       &trans    &kp N1      &kp N2  &kp N3  &kp PRCNT  &trans
+                                               &to 4             &trans   &kp BSPC    &kp SPACE  &lt 7 N0  &kp PERIOD
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
+&trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt       &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
+&trans     &kp PIPE    &kp EQUAL     &kp PLUS  &kp MINUS  &kp UNDERSCORE     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &trans
+                                        &to 4     &trans        &kp BSPC    &kp SPACE    &trans     &trans
             >;
         };
     };
