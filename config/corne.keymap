@@ -198,20 +198,20 @@
         Game_1 {
             label = "Game 1";
             bindings = <
-&kp ESC    &kp TAB  &kp Q  &kp W      &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
- &trans  &kp LSHFT  &kp A  &kp S      &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
- &trans   &kp LALT  &kp Z  &kp X      &kp C      &kp V         &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
-                           &to 5  &kp LCTRL  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
+&kp ESC    &kp TAB  &kp Q     &kp W  &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
+ &trans  &kp LSHFT  &kp A     &kp S  &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
+ &trans  &kp LCTRL  &kp Z     &kp X  &kp C      &kp V         &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
+                           &kp LALT  &mo 5  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
             >;
         };
 
         Game_2 {
             label = "Game 2";
             bindings = <
-&none  &kp Q  &kp W  &kp F      &kp P           &kp G              &kp J      &kp L      &kp U       &kp Y  &kp SEMI  &none
-&none  &kp A  &kp R  &kp S      &kp T           &kp D              &kp H      &kp N      &kp E       &kp I     &kp O  &none
-&none  &kp Z  &kp X  &kp C      &kp V           &kp B              &kp K      &kp M  &kp COMMA  &kp PERIOD  &kp FSLH  &none
-                     &to 4  &lt 6 RET  &tm LSHFT BSPC    &tm RSHFT SPACE  &lt 7 DEL    &kp ESC
+&trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)  &kp LC(N4)  &kp LC(N5)    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans      &trans      &trans    &trans  &trans  &trans
             >;
         };
     };
