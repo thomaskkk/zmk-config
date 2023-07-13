@@ -91,7 +91,7 @@
             key-positions = <16 17>;
         };
 
-        new_combo {
+        enter {
             bindings = <&kp RET>;
             key-positions = <29 28>;
         };
