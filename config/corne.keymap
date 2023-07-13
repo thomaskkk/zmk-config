@@ -95,6 +95,11 @@
             bindings = <&kp RET>;
             key-positions = <29 28>;
         };
+
+        ctrl+alt+del {
+            bindings = <&kp LC(LA(DEL))>;
+            key-positions = <33 34>;
+        };
     };
 
     macros {
