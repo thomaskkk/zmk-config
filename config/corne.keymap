@@ -71,32 +71,6 @@
             key-positions = <1 2>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <4 5>;
-        };
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <30 31>;
-            layers = <0 1 2 3 4>;
-        };
-
-        backspace {
-            bindings = <&kp BSPC>;
-            key-positions = <6 7>;
-        };
-
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <18 19>;
-        };
-
-        enter {
-            bindings = <&kp RET>;
-            key-positions = <30 31>;
-        };
-
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <5 6>;
@@ -113,12 +87,17 @@
             key-positions = <38 39>;
         };
 
-        backspace_2 {
+        backspace {
             bindings = <&kp BSPC>;
+            key-positions = <4 5>;
+        };
+
+        delete {
+            bindings = <&kp DEL>;
             key-positions = <16 17>;
         };
 
-        enter_2 {
+        new_combo {
             bindings = <&kp RET>;
             key-positions = <29 28>;
         };
