@@ -60,11 +60,6 @@
             layers = <4 5>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-        };
-
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <5 6>;
@@ -72,11 +67,11 @@
 
         alt_f4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <9 10>;
+            key-positions = <9 10 8 7>;
             layers = <0 1 2 3>;
         };
 
-        caps_word2 {
+        caps_word {
             bindings = <&caps_word>;
             key-positions = <38 39>;
         };
@@ -94,11 +89,6 @@
         enter {
             bindings = <&kp RET>;
             key-positions = <29 28>;
-        };
-
-        ctrl+alt+del {
-            bindings = <&kp LC(LA(DEL))>;
-            key-positions = <33 34>;
         };
     };
 
@@ -181,10 +171,10 @@
         Game_1 {
             label = "Game 1";
             bindings = <
-&kp ESC    &kp TAB  &kp Q     &kp W  &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
- &trans  &kp LSHFT  &kp A     &kp S  &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
- &trans  &kp LCTRL  &kp Z     &kp X  &kp C      &kp V         &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
-                           &kp LALT  &mo 5  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
+&kp ESC    &kp TAB  &kp Q             &kp W    &kp E      &kp R     &kp KP_PLUS  &kp KP_N7   &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY  &kp BSPC
+ &trans  &kp LSHFT  &kp A             &kp S    &kp D      &kp F    &kp KP_MINUS  &kp KP_N4   &kp KP_N5  &kp KP_N6     &kp KP_SLASH    &trans
+ &trans  &kp LCTRL  &kp Z             &kp X    &kp C      &kp V         &kp TAB  &kp KP_N1   &kp KP_N2  &kp KP_N3   &kp KP_NUMLOCK    &trans
+                           &tm LEFT_ALT ESC  &lt 5 I  &kp SPACE         &kp RET  &kp KP_N0  &kp KP_DOT
             >;
         };
 
