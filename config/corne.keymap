@@ -141,10 +141,10 @@
         Numpad {
             label = "Numpad";
             bindings = <
-&trans  &kp LC(LGUI)  &kp LC(LG(LEFT))         &kp UP  &kp LC(LG(RIGHT))  &kp PG_UP     &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
-&trans      &kp LGUI          &kp LEFT       &kp DOWN          &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
-&trans  &kp LS(LGUI)         &kp PSCRN  &kp C_AL_CALC           &kp HOME    &kp END       &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
-                                               &trans             &trans  &kp SPACE     &kp BSPC  &lt 2 N0  &tm LALT DOT
+&trans  &kp LC(LGUI)  &kp LC(LS(TAB))         &kp UP  &kp LC(TAB)  &kp PG_UP     &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
+&trans      &kp LGUI         &kp LEFT       &kp DOWN    &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
+&trans  &kp LS(LGUI)        &kp PSCRN  &kp C_AL_CALC     &kp HOME    &kp END       &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
+                                              &trans       &trans  &kp SPACE     &kp BSPC  &lt 2 N0  &tm LALT DOT
             >;
         };
 
@@ -161,10 +161,10 @@
         Function {
             label = "Function";
             bindings = <
-&trans        &kp F1           &kp F2        &kp F3        &kp F4        &kp F5          &kp F6           &kp F7       &kp F8      &kp F9   &kp F10  &trans
-&trans  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP  &kp LC(LS(TAB))  &kp LC(TAB)     &kp F11   &kp F12  &trans
-&trans       &kp INS  &kp PAUSE_BREAK      &kp CAPS      &kp SLCK    &bt BT_CLR    &kp C_VOL_DN       &kp C_MUTE   &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
-                                             &trans        &trans        &trans          &trans           &trans       &trans
+&trans        &kp F1           &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
+&trans  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP       &none       &none     &kp F11   &kp F12  &trans
+&trans       &kp INS  &kp PAUSE_BREAK      &kp CAPS      &kp SLCK    &bt BT_CLR    &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
+                                             &trans        &trans        &trans          &trans      &trans      &trans
             >;
         };
 
