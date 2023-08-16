@@ -25,9 +25,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "balanced";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -36,9 +36,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            flavor = "hold-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings =
                 <&mo>,
                 <&kp>;
@@ -131,40 +131,40 @@
         Colemak {
             label = "Colemak";
             bindings = <
-&none       &kp Q       &kp W          &kp F        &kp P            &kp G             &kp J        &kp L         &kp U       &kp Y    &kp SEMI  &none
-&none  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T            &kp D             &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O  &none
-&none       &kp Z       &kp X          &kp C        &kp V            &kp B             &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH  &none
-                               &tm LCTRL ESC    &lt 1 TAB  &tm LSHFT SPACE    &tm RSHFT BSPC    &lt 2 RET  &tm LALT DEL
+ &kp ESC       &kp Q       &kp W          &kp F        &kp P            &kp G             &kp J        &kp L         &kp U       &kp Y    &kp SEMI  &kp BSPC
+ &kp TAB  &hm LGUI A  &hm LALT R    &hm LCTRL S  &hm LSHFT T            &kp D             &kp H  &hm RSHFT N   &hm RCTRL E  &hm LALT I  &hm RGUI O   &kp RET
+&kp LWIN       &kp Z       &kp X          &kp C        &kp V            &kp B             &kp K        &kp M     &kp COMMA     &kp DOT    &kp FSLH   &kp DEL
+                                  &tm LCTRL ESC    &lt 1 TAB  &tm LSHFT SPACE    &tm RSHFT BSPC    &lt 2 RET  &tm LALT DEL
             >;
         };
 
         Numpad {
             label = "Numpad";
             bindings = <
-&none  &kp LC(LGUI)  &kp LC(LS(TAB))         &kp UP  &kp LC(TAB)  &kp PG_UP     &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &none
-&none      &kp LGUI         &kp LEFT       &kp DOWN    &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &none
-&none  &kp LS(LGUI)        &kp PSCRN  &kp C_AL_CALC     &kp HOME    &kp END       &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &none
-                                             &trans       &trans  &kp SPACE     &kp BSPC  &lt 2 N0  &tm LALT DOT
+&trans  &kp LC(LGUI)  &kp LC(LS(TAB))         &kp UP  &kp LC(TAB)  &kp PG_UP     &kp PLUS    &kp N7        &kp N8  &kp N9     &kp STAR  &trans
+&trans      &kp LGUI         &kp LEFT       &kp DOWN    &kp RIGHT  &kp PG_DN    &kp MINUS    &kp N4        &kp N5  &kp N6    &kp SLASH  &trans
+&trans  &kp LS(LGUI)        &kp PSCRN  &kp C_AL_CALC     &kp HOME    &kp END       &kp F9    &kp N1        &kp N2  &kp N3  &kp PERCENT  &trans
+                                              &trans       &trans  &kp SPACE     &kp BSPC  &lt 2 N0  &tm LALT DOT
             >;
         };
 
         Symbols {
             label = "Symbols";
             bindings = <
-&none     &kp EXCL       &kp AT     &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &none
-&none  &spacegrave  &spacecaret  &spacetilde  &spacesqt  &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &none
-&none     &kp PIPE    &kp EQUAL     &kp PLUS  &kp MINUS  &kp UNDER     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &none
-                                      &trans     &trans  &kp SPACE     &kp BSPC    &trans     &trans
+&trans     &kp EXCL       &kp AT     &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR  &trans
+&trans  &spacegrave  &spacecaret  &spacetilde  &spacesqt  &spacedqt      &kp DQT   &kp SQT  &kp TILDE  &kp CARET  &kp GRAVE  &trans
+&trans     &kp PIPE    &kp EQUAL     &kp PLUS  &kp MINUS  &kp UNDER     &kp LBRC  &kp RBRC   &kp LBKT   &kp RBKT   &kp BSLH  &trans
+                                       &trans     &trans  &kp SPACE     &kp BSPC    &trans     &trans
             >;
         };
 
         Function {
             label = "Function";
             bindings = <
-&none        &kp F1           &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &none
-&none  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP       &none       &none     &kp F11   &kp F12  &none
-&none       &kp INS  &kp PAUSE_BREAK      &kp CAPS      &kp SLCK    &bt BT_CLR    &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &none
-                                            &trans        &trans        &trans          &trans      &trans      &trans
+&trans        &kp F1           &kp F2        &kp F3        &kp F4        &kp F5          &kp F6      &kp F7      &kp F8      &kp F9   &kp F10  &trans
+&trans  &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP       &none       &none     &kp F11   &kp F12  &trans
+&trans       &kp INS  &kp PAUSE_BREAK      &kp CAPS      &kp SLCK    &bt BT_CLR    &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
+                                             &trans        &trans        &trans          &trans      &trans      &trans
             >;
         };
 
