@@ -182,8 +182,8 @@
         Game_2 {
             label = "Game 2";
             bindings = <
+&none  &kp I   &kp M   &kp T         &kp H   &kp G     &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp N6  &kp N7  &kp N8        &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp I   &kp M   &kp T         &kp G   &kp H     &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp Z   &kp X   &kp C         &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &none
                        &kp LEFT_ALT  &trans  &trans    &trans  &trans  &trans
             >;
