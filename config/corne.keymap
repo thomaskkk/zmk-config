@@ -19,6 +19,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         tm: thumb_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "THUMB_MODS";
@@ -28,6 +29,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
         lt: behavior_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP";
@@ -100,24 +102,28 @@
             #binding-cells = <0>;
             bindings = <&kp DQT &kp SPACE>;
         };
+
         spacesqt: spacesqt {
             compatible = "zmk,behavior-macro";
             label = "spacesqt";
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SPACE>;
         };
+
         spacetilde: spacetilde {
             compatible = "zmk,behavior-macro";
             label = "spacetilde";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp SPACE>;
         };
+
         spacecaret: spacecaret {
             compatible = "zmk,behavior-macro";
             label = "spacecaret";
             #binding-cells = <0>;
             bindings = <&kp CARET &kp SPACE>;
         };
+
         spacegrave: spacegrave {
             compatible = "zmk,behavior-macro";
             label = "spacegrave";
@@ -142,10 +148,10 @@
         Numpad {
             label = "Numpad";
             bindings = <
-&trans  &kp LC(LGUI)  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp PG_UP    &kp PLUS   &kp N7    &kp N8     &kp N9  &kp STAR     &trans
-&trans  &kp LGUI      &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_DN    &kp MINUS  &kp N4    &kp N5     &kp N6  &kp SLASH    &trans
-&trans  &kp LS(LGUI)  &kp PSCRN        &kp C_AL_CALC  &kp HOME     &kp END      &kp F9     &kp N1    &kp N2     &kp N3  &kp PERCENT  &trans
-                                       &trans         &trans       &kp SPACE    &kp BSPC   &lt 2 N0  &lt 3 DOT
+&trans  &kp LC(LGUI)  &kp LC(LA(UP))  &kp UP         &kp LC(LA(DOWN))  &kp PG_UP    &kp PLUS   &kp N7    &kp N8     &kp N9  &kp STAR     &trans
+&trans  &kp LGUI      &kp LEFT        &kp DOWN       &kp RIGHT         &kp PG_DN    &kp MINUS  &kp N4    &kp N5     &kp N6  &kp SLASH    &trans
+&trans  &kp LS(LGUI)  &kp PSCRN       &kp C_AL_CALC  &kp HOME          &kp END      &kp F9     &kp N1    &kp N2     &kp N3  &kp PERCENT  &trans
+                                      &trans         &trans            &kp SPACE    &kp BSPC   &lt 2 N0  &lt 3 DOT
             >;
         };
 
