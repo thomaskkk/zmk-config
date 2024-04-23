@@ -188,19 +188,15 @@
         Game_2 {
             label = "Game 2";
             bindings = <
-&none  &kp I   &kp M   &kp T         &kp H   &kp G     &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp N6  &kp N7  &kp N8        &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp Z   &kp X   &kp C         &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &none
-                       &kp LEFT_ALT  &trans  &trans    &trans  &trans  &trans
+&none  &kp I         &kp M     &kp UP_ARROW  &kp T      &kp Y     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp LEFT_ALT  &kp LEFT  &kp DOWN      &kp RIGHT  &kp G     &trans  &trans  &trans  &trans  &trans  &none
+&none  &kp Z         &kp X     &kp C         &kp V      &kp B     &trans  &trans  &trans  &trans  &trans  &none
+                               &kp LEFT_ALT  &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+&nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
