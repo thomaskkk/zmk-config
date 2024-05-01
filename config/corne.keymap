@@ -85,6 +85,12 @@
             layers = <4 5>;
             slow-release;
         };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <25 26>;
+            layers = <4>;
+        };
     };
 
     macros {
