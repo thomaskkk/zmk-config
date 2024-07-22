@@ -137,20 +137,20 @@
         Colemak {
             label = "Colemak";
             bindings = <
-&kp ESC   &kp Q       &kp W       &kp F        &kp P        &kp G              &kp J           &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
-&kp TAB   &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D              &kp H           &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp RET
-&kp LWIN  &kp Z       &kp X       &kp C        &kp V        &kp B              &kp K           &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp DEL
-                                  &lt 3 ESC    &lt 1 TAB    &tm LSHFT SPACE    &tm RSHFT BSPC  &lt 2 RET    &lt 4 DEL
+&kp ESC   &kp Q       &kp W       &kp F        &kp P        &kp G          &kp J           &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
+&kp TAB   &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D          &kp H           &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp RET
+&kp LWIN  &kp Z       &kp X       &kp C        &kp V        &kp B          &kp K           &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp DEL
+                                  &kp ESC      &lt 1 TAB    &lt 3 SPACE    &tm RSHFT BSPC  &lt 2 RET    &lt 4 DEL
             >;
         };
 
-        Navigation {
-            label = "Navigation";
+        Numpad {
+            label = "Numpad";
             bindings = <
-&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &trans    &trans    &trans    &trans    &trans  &trans
-&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &trans    &mkp MB4  &mkp MB5  &trans    &trans  &trans
-                                           &kp LEFT_ALT   &trans       &kp SPACE            &kp BSPC  &kp RET   &kp DEL
+&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK    &trans
+&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH    &trans
+&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &kp F9     &kp N1  &kp N2   &kp N3  &kp PERCENT  &trans
+                                           &kp LEFT_ALT   &trans       &kp SPACE            &kp BSPC   &kp N0  &kp DOT
             >;
         };
 
@@ -164,15 +164,15 @@
             >;
         };
 
-        Numbers {
+        Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans       &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &kp F9     &kp N1  &kp N2   &kp N3  &trans     &trans
-                        &trans  &kp TAB  &kp SPACE    &kp BSPC   &kp N0  &kp DOT
+&trans  &trans  &mkp MB4  &mkp MB3  &mkp MB5  &trans    &trans    &mkp MB4  &mkp MB3  &mkp MB5  &trans  &trans
+&trans  &trans  &mkp MB2  &trans    &mkp MB1  &trans    &trans    &mkp MB1  &trans    &mkp MB2  &trans  &trans
+&trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans  &trans
+                          &kp ESC   &kp TAB   &trans    &kp BSPC  &kp RET   &kp DEL
             >;
 
-            label = "Numbers";
+            label = "Mouse";
         };
 
         Function {
