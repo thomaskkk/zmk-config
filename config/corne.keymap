@@ -5,8 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 &lt { flavor = "hold-preferred"; };
 
@@ -37,15 +37,15 @@
         compatible = "zmk,combos";
 
         game1_layer {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <1 25>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2>;
         };
 
         default_layer {
             bindings = <&to 0>;
             key-positions = <1 25>;
-            layers = <5 6>;
+            layers = <4 5>;
         };
 
         caps_lock {
@@ -56,7 +56,7 @@
         alt_f4 {
             bindings = <&kp LA(F4)>;
             key-positions = <9 10 8 7>;
-            layers = <0 1 2 4>;
+            layers = <0 1 2>;
         };
 
         caps_word {
@@ -82,14 +82,14 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
-            layers = <5 6>;
+            layers = <4 5>;
             slow-release;
         };
 
         caps {
             bindings = <&kp CAPS>;
             key-positions = <25 26>;
-            layers = <5>;
+            layers = <4>;
         };
     };
 
@@ -139,17 +139,17 @@
 &kp ESC   &kp Q       &kp W       &kp F        &kp P        &kp G               &kp J                 &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
 &kp TAB   &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D               &kp H                 &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp RET
 &kp LWIN  &kp Z       &kp X       &kp C        &kp V        &kp B               &kp K                 &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp DEL
-                                  &lt 3 ESC    &lt 1 TAB    &mt LSHIFT SPACE    &mt RSHIFT BACKSPACE  &lt 2 RET    &lt 4 DEL
+                                  &lt 3 ESC    &lt 1 TAB    &mt LSHIFT SPACE    &mt RSHIFT BACKSPACE  &lt 2 RET    &kp DEL
             >;
         };
 
-        Numpad {
-            label = "Numpad";
+        Navigation {
+            label = "Navigation";
             bindings = <
-&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK    &trans
-&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH    &trans
-&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &kp F9     &kp N1  &kp N2   &kp N3  &kp PERCENT  &trans
-                                           &kp LEFT_ALT   &trans       &kp SPACE            &kp BSPC   &kp N0  &kp DOT
+&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &trans        &trans      &mkp MB4    &mkp MB5    &trans    &trans
+&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &kp C_VOL_UP  &mkp MB1    &mkp MB1    &mkp MB2    &mkp MB3  &trans
+&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
+                                           &kp LEFT_ALT   &trans       &trans               &trans        &trans      &trans
             >;
         };
 
@@ -163,25 +163,15 @@
             >;
         };
 
-        Mouse {
+        Numpad {
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans    &trans    &trans   &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans    &trans    &trans   &trans   &trans  &trans  &trans
-&trans  &trans  &trans  &trans   &trans   &trans    &trans    &trans   &trans   &trans  &trans  &trans
-                        &kp ESC  &kp TAB  &trans    &kp BSPC  &kp RET  &kp DEL
+&trans  &kp F1   &kp F2    &kp F3    &kp F4   &kp F5     &kp PLUS   &kp N7  &kp N8   &kp N9  &kp ASTRK  &trans
+&trans  &kp F6   &kp F7    &kp F8    &kp F9   &kp F10    &kp MINUS  &kp N4  &kp N5   &kp N6  &kp SLASH  &trans
+&trans  &kp INS  &kp SLCK  &kp CAPS  &kp F11  &kp F12    &kp DOT    &kp N1  &kp N2   &kp N3  &kp RET    &trans
+                           &kp ESC   &kp TAB  &trans     &kp BSPC   &kp N0  &kp DEL
             >;
 
-            label = "Mouse";
-        };
-
-        Function {
-            label = "Function";
-            bindings = <
-&trans  &kp F1        &kp F2           &kp F3        &kp F4        &kp F5          &kp F6        &kp F7      &kp F8      &kp F9      &kp F10   &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOL_UP  &none       &none       &kp F11     &kp F12   &trans
-&trans  &kp INS       &kp PAUSE_BREAK  &kp CAPS      &kp SLCK      &bt BT_CLR      &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
-                                       &trans        &trans        &kp SPACE       &kp BSPC      &trans      &trans
-            >;
+            label = "Numpad";
         };
 
         Game_1 {
@@ -190,7 +180,7 @@
 &none  &kp TAB    &kp Q   &kp W      &kp E   &kp R        &kp KP_PLUS   &kp KP_N7  &kp KP_N8   &kp KP_N9  &kp KP_MULTIPLY  &none
 &none  &kp LSHFT  &kp A   &kp S      &kp D   &kp F        &kp KP_MINUS  &kp KP_N4  &kp KP_N5   &kp KP_N6  &kp KP_SLASH     &none
 &none  &kp N1     &kp N2  &kp N3     &kp N4  &kp N5       &kp TAB       &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_NUMLOCK   &none
-                          &kp LCTRL  &mo 6   &kp SPACE    &kp RET       &kp KP_N0  &kp KP_DOT
+                          &kp LCTRL  &mo 5   &kp SPACE    &kp RET       &kp KP_N0  &kp KP_DOT
             >;
         };
 
