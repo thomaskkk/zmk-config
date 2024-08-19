@@ -140,17 +140,17 @@
 &kp ESC   &kp Q       &kp W       &kp F        &kp P        &kp G               &kp J                 &kp L        &kp U        &kp Y       &kp SEMI    &kp BSPC
 &kp TAB   &hm LGUI A  &hm LALT R  &hm LCTRL S  &hm LSHFT T  &kp D               &kp H                 &hm RSHFT N  &hm RCTRL E  &hm RALT I  &hm RGUI O  &kp RET
 &kp LWIN  &kp Z       &kp X       &kp C        &kp V        &kp B               &kp K                 &kp M        &kp COMMA    &kp DOT     &kp FSLH    &kp DEL
-                                  &lt 3 ESC    &lt 1 TAB    &mt LSHIFT SPACE    &mt RSHIFT BACKSPACE  &lt 2 RET    &kp DEL
+                                  &kp ESC      &lt 1 TAB    &mt LSHIFT SPACE    &mt RSHIFT BACKSPACE  &lt 2 RET    &lt 3 DEL
             >;
         };
 
         Navigation {
             label = "Navigation";
             bindings = <
-&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &bt BT_PRV    &bt BT_NXT  &mkp MB4    &mkp MB5    &kp CAPS  &trans
-&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &kp C_VOL_UP  &mkp MB1    &mkp MB1    &mkp MB2    &mkp MB3  &trans
-&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP  &trans
-                                           &kp LEFT_ALT   &trans       &trans               &trans        &trans      &trans
+&trans  &kp LC(LG(LEFT))  &kp LC(LS(TAB))  &kp UP         &kp LC(TAB)  &kp LC(LG(RIGHT))    &kp PLUS   &kp N7  &kp N8        &kp N9  &kp ASTRK  &trans
+&trans  &kp HOME          &kp LEFT         &kp DOWN       &kp RIGHT    &kp PG_UP            &kp MINUS  &kp N4  &kp NUMBER_5  &kp N6  &kp SLASH  &trans
+&trans  &kp END           &kp PSCRN        &kp C_AL_CALC  &kp INS      &kp PAGE_DOWN        &kp DOT    &kp N1  &kp N2        &kp N3  &kp RET    &trans
+                                           &kp LEFT_ALT   &trans       &trans               &trans     &kp N0  &trans
             >;
         };
 
@@ -166,10 +166,10 @@
 
         Numpad {
             bindings = <
-&trans  &kp F1   &kp F2    &kp F3      &kp F4   &kp F5     &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTRK  &trans
-&trans  &kp F6   &kp F7    &kp F8      &kp F9   &kp F10    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH  &trans
-&trans  &kp INS  &kp SLCK  &bt BT_CLR  &kp F11  &kp F12    &kp DOT    &kp N1  &kp N2  &kp N3  &kp RET    &trans
-                           &trans      &trans   &trans     &trans     &kp N0  &trans
+&trans  &kp F1   &kp F2    &kp F3    &kp F4   &kp F5     &bt BT_PRV    &bt BT_NXT  &mkp MB4    &mkp MB5    &bt BT_CLR  &trans
+&trans  &kp F6   &kp F7    &kp F8    &kp F9   &kp F10    &kp C_VOL_UP  &mkp MB1    &mkp MB1    &mkp MB2    &mkp MB3    &trans
+&trans  &kp INS  &kp SLCK  &kp CAPS  &kp F11  &kp F12    &kp C_VOL_DN  &kp C_MUTE  &kp C_PREV  &kp C_NEXT  &kp C_PP    &trans
+                           &trans    &trans   &trans     &trans        &kp N0      &trans
             >;
 
             label = "Numpad";
