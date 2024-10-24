@@ -190,7 +190,7 @@
             bindings = <
 &none  &kp I         &kp M     &kp UP_ARROW  &kp T      &kp Y     &trans  &trans  &trans  &trans  &trans  &none
 &none  &kp LEFT_ALT  &kp LEFT  &kp DOWN      &kp RIGHT  &kp G     &trans  &trans  &trans  &trans  &trans  &none
-&none  &kp Z         &kp X     &kp C         &kp V      &kp B     &trans  &trans  &trans  &trans  &trans  &none
+&kp A  &kp Z         &kp X     &kp C         &kp V      &kp B     &trans  &trans  &trans  &trans  &trans  &none
                                &kp LEFT_ALT  &trans     &trans    &trans  &trans  &trans
             >;
         };
